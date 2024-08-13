@@ -19,8 +19,8 @@ This mode is a good candidate to be passed to `make-buffer'."
        "M-r" 'reload-buffers
        "C-shift-tab" 'switch-buffer-previous
        "C-tab" 'switch-buffer-next
-       "C-T" 'reopen-buffer
-       "C-t" 'make-buffer-focus
+       "C-X" 'reopen-buffer
+       "C-x" 'make-buffer-focus
        "M-o" 'toggle-prompt-buffer-focus
        "f4" 'delete-panel-buffer
        "s-f4" 'delete-all-panel-buffers
@@ -63,17 +63,17 @@ This mode is a good candidate to be passed to `make-buffer'."
        "C-q" 'quit)
       keyscheme:emacs
       (list
-       "C-x left" 'switch-buffer-previous
-       "C-x C-left" 'switch-buffer-previous
-       "C-x right" 'switch-buffer-next
-       "C-x C-right" 'switch-buffer-next
-       "C-x o" 'toggle-prompt-buffer-focus
-       "C-x b" 'switch-buffer
-       "C-x k" 'delete-buffer
-       "C-x C-k" 'delete-current-buffer
-       "C-x C-b" 'nyxt/mode/buffer-listing::list-buffers
+       "C-t left" 'switch-buffer-previous
+       "C-t C-left" 'switch-buffer-previous
+       "C-t right" 'switch-buffer-next
+       "C-t C-right" 'switch-buffer-next
+       "C-t o" 'toggle-prompt-buffer-focus
+       "C-t C-h" 'switch-buffer
+       "C-t k" 'delete-buffer
+       "C-t C-k" 'delete-current-buffer
+       "C-t C-b" 'nyxt/mode/buffer-listing::list-buffers
        "C-M-l" 'copy-url
-       "C-M-t" 'copy-title
+       "C-M-x" 'copy-title
        "C-h t" 'tutorial
        "C-h r" 'manual
        "C-h a" 'describe-any
@@ -86,12 +86,12 @@ This mode is a good candidate to be passed to `make-buffer'."
        "C-h s" 'describe-slot
        "C-h v" 'describe-variable
        "C-d" 'nyxt/mode/download:list-downloads
-       "C-x 5 2" 'make-window
-       "C-x 5 0" 'delete-current-window
-       "C-x 5 1" 'delete-window
-       "C-x C-f" 'nyxt/mode/file-manager:open-file
-       "M-x" 'execute-command
-       "C-M-x" 'execute-extended-command
+       "C-t 5 2" 'make-window
+       "C-t 5 0" 'delete-current-window
+       "C-t 5 1" 'delete-window
+       "C-t C-f" 'nyxt/mode/file-manager:open-file
+       "M-t" 'execute-command
+       "C-M-t" 'execute-extended-command
        "M-1" (read-from-string "nyxt/mode/repeat:repeat-key")
        "M-2" (read-from-string "nyxt/mode/repeat:repeat-key")
        "M-3" (read-from-string "nyxt/mode/repeat:repeat-key")
@@ -101,7 +101,7 @@ This mode is a good candidate to be passed to `make-buffer'."
        "M-7" (read-from-string "nyxt/mode/repeat:repeat-key")
        "M-8" (read-from-string "nyxt/mode/repeat:repeat-key")
        "M-9" (read-from-string "nyxt/mode/repeat:repeat-key")
-       "C-x C-c" 'quit)
+       "C-t C-c" 'quit)
       keyscheme:vi-normal
       (list
        "o" 'set-url

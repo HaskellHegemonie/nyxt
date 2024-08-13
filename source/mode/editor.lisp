@@ -31,10 +31,10 @@ See `plaintext-editor-mode' for an example of inheritance."
        "C-tab" 'switch-buffer)
       keyscheme:emacs
       (list
-       "C-x C-f" 'editor-open-file
-       "C-x C-s" 'editor-write-file
-       "C-x C-k" 'delete-current-buffer
-       "C-x b" 'switch-buffer)
+       "C-t C-f" 'editor-open-file
+       "C-t C-s" 'editor-write-file
+       "C-t C-k" 'delete-current-buffer
+       "C-t C-h" 'switch-buffer)
       keyscheme:vi-normal
       (list
        "C-o" 'editor-open-file
